@@ -71,10 +71,10 @@ Prepare the configuration files. If you start cefnetd (by entering "cefnetdstart
 Before starting cefnetd, set up its FIB by creating the FIB configuration file (cefnetd.fib). The following examples are two cefnetd.fib files to set up PC1's FIB and PC2's FIB, respectively. Since PC3 does not send Interest to any node, PC3's FIB is not needed.
 
 PC1 cefnetd.fib  
-> *ccn:/example udp 10.0.1.2*
+> *ccnx:/example udp 10.0.1.2*
 
 PC2 cefnetd.fib  
-> *ccn:/example udp 10.0.1.3*
+> *ccnx:/example udp 10.0.1.3*
 
 If you want to set up FIB manually after cefnetd's startup, it is also possible to set up FIB with the cefroute utility, such as,  
 > *cefroute add ccn:/example udp 10.0.1.2*
